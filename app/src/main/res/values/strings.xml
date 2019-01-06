@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">视频提文本</string>
+    <string name="title_activity_ip_address">ip_address</string>
+    <string name="title_activity_show_bar">show_bar</string>
+    <string name="title_activity_main1">MainActivity1</string>
+    <string name="title_activity_show_result">show_result</string>
+</resources>

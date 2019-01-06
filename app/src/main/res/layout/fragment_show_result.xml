@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:background="#f7f4f3"
+    android:layout_height="match_parent" >
+
+
+    <com.yjf.myapplication.BaseDragZoomImageView
+        android:id="@+id/imageView"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="50%"
+        android:background="#dc101010"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:scaleType="matrix"
+        android:layout_alignParentLeft="true"
+
+        />
+
+    <TextView
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="40%"
+        android:lineSpacingExtra="2px"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_alignParentLeft="true"
+        android:background="#dcf7f5f5"
+        android:ellipsize="end"
+        android:id="@+id/tv_showText"
+        android:layout_below="@+id/imageView"
+        android:layout_above="@+id/show_num"
+
+        android:layout_marginBottom="20px"
+     />
+
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/show_num"
+            android:layout_alignParentRight="false"
+            android:layout_marginBottom="10px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="10px"
+            android:paddingRight="20px"
+            android:paddingLeft="20px"
+            android:text="上一页" />
+
+        <TextView
+            android:id="@+id/show_num"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="false"
+            android:background="#dcf7f5f5"
+
+            android:paddingRight="30px"
+            android:paddingLeft="30px"
+
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/previous"
+            android:text="0/0" />
+
+
+        <Button
+            android:id="@+id/next_bt"
+            android:layout_width="wrap_content"
+            android:paddingRight="20px"
+            android:paddingLeft="20px"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="20px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="false"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBaseline="@+id/previous"
+            android:layout_toRightOf="@id/show_num"
+            android:layout_height="wrap_content"
+
+            android:text="下一页" />
+
+</android.support.percent.PercentRelativeLayout>

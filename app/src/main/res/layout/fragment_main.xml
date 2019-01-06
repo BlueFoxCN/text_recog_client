@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/select_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="false"
+        android:textColor="#141514"
+        android:text="选择视频"
+        />
+
+
+
+    <TextView
+        android:id="@+id/lvs"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/select_video"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_alignBaseline="@+id/select_video"
+        android:layout_toLeftOf="@+id/spinner"
+        android:layout_alignParentRight="false"
+        android:textColor="#141514"
+        android:text="语言:" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_alignBottom="@+id/select_video"
+        android:textColor="#141514"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/select_video"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_above="@+id/show_num"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="5px"
+        ></Spinner>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_view"
+        android:layout_above="@+id/bt_video"
+        android:layout_below="@+id/select_video">
+    </ListView>
+
+
+
+    <Button
+        android:id="@+id/bt_video"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/button_clearAll"
+        android:layout_alignParentRight="false"
+        android:layout_marginBottom="10px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="10px"
+        android:text="视频拍摄" />
+
+    <Button
+        android:id="@+id/button_clearAll"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="10px"
+        android:layout_height="wrap_content"
+        android:text="清空列表" />
+
+
+    <Button
+        android:id="@+id/button_flush"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="20px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/button_clearAll"
+        android:layout_height="wrap_content"
+        android:text="刷新列表" />
+
+</RelativeLayout>
