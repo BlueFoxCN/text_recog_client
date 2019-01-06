@@ -318,7 +318,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         byte[] bytes = new byte[1];
                         int ret = dis.read(bytes, 0, 1);
                         progress_idx = (int)bytes[0];
-                        Log.d("PROGRESS_ID", String.valueOf(progress_idx));
                         process_show_value = progress_map[progress_idx];
                         Message message = progress_handler.obtainMessage(0, process_show_value, process_show_value);
                         message.sendToTarget();
